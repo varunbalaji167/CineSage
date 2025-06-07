@@ -44,7 +44,18 @@ To get started with the Website, follow the steps below:
 3. Set Up Firebase
 
 - Create a Firebase project at Firebase Console.
-- Set up Firebase Authentication (Email/Password sign-in method).
+- Set up Firebase Authentication (Email/Password sign-in method) and Cloud Firestore.
+- Create .env file with
+```bash
+# .env (frontend Vite-compatible)
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+VITE_FIREBASE_MEASUREMENT_ID=
+```
 - Create Firestore collections (users, movies) using src/utils/Upload.js.
 - Copy the Firebase configuration from your Firebase console and add it to the src/firebase.js file.
 
@@ -113,7 +124,7 @@ To deploy using Firebase run following commands in terminal at root of client
   firebase deploy --only hosting
 ```
 ### Hosted URL
-https://CineSage-swetha.web.app
+https://cinesage-fafa3.web.app
 ## Acknowledgements
 
  - **Dataset of Movies** is collected from **Kaggle Database**(https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies)
